@@ -223,6 +223,12 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+#hero h3 {
+  color: #999;
+  font-size: 16px;
+  font-style:italic;
+}
+
 #hero .btn-get-started {
   font-family: "Poppins", sans-serif;
   text-transform: uppercase;
@@ -637,7 +643,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   border: 6px solid #fff;
 }
 
-#services .icon a {
+#services .icon {
   display: inline-block;
   background: #2e72a1;
   border: 2px solid #2e72a1;
@@ -655,7 +661,7 @@ body.mobile-nav-active #mobile-nav-toggle {
   color: #2e72a1;
 }
 
-#services .box:hover .icon a {
+#services .box:hover .icon {
   color: #2e72a1;
   background: #fff;
 }
