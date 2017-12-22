@@ -560,7 +560,6 @@ body.mobile-nav-active #mobile-nav-toggle {
   background: url(../img/pseudocode-ad.png) center center no-repeat;
   background-size: contain;
   /*margin-bottom: 10px;*/
-
 }
 
 #about .about-container .content {
@@ -718,6 +717,19 @@ body.mobile-nav-active #mobile-nav-toggle {
 #services .description {
   font-size: 14px;
   line-height: 24px;
+}
+
+#apcsp .box{
+  min-height: 600px
+}
+
+#apcsp .background {
+  /*max-width: 100%;*/
+  min-height: 400px;
+  background: url(https://code.org/curriculum/docs/csp/units_horizSnap.png) center center no-repeat;
+  background-size: contain;
+
+  /*https://code.org/curriculum/docs/csp/units_horizSnap.png*/
 }
 
 /* Call To Action Section
