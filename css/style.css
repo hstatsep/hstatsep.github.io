@@ -630,6 +630,19 @@ body.mobile-nav-active #mobile-nav-toggle {
   font-size: 14px;
 }
 
+.btn-primary {
+  background-color: #2e72a1;
+}
+
+.btn-primary:hover {
+  background-color: white;
+  color: #2e72a1;
+}
+
+.videoLink {
+  margin-left: 80px;
+}
+
 /* Facts Section
 --------------------------------*/
 
