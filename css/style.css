@@ -156,7 +156,7 @@ h6 {
 
 #hero {
   display: table;
-  width: 100%;
+  width: 101%;
   height: 100vh;
   /*background: url(../img/hstat-building.jpg) top center fixed;*/
   background-size: cover;
@@ -203,6 +203,8 @@ h6 {
   padding: 0 10px;
   text-align: center;
   vertical-align: middle;
+  position:relative;
+  left: -1px;
 }
 
 #hero h1 {
