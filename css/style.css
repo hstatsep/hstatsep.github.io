@@ -580,7 +580,13 @@ body.mobile-nav-active #mobile-nav-toggle {
   }
 }
 
-@media (min-width: 769px) {
+/*@media (max-width: 991px) {*/
+/*  #about .about-container .background {*/
+/*    position: relative;*/
+    /*top: -50px;*/
+/*  }*/
+/*}*/
+@media (min-width: 992px) {
   #about .about-container .background {
     position: relative;
     top: 50px;
