@@ -649,6 +649,7 @@ body.mobile-nav-active #mobile-nav-toggle {
 
 .videoLink {
   margin-left: 80px;
+  display: inline-block;
 }
 
 /* Facts Section
