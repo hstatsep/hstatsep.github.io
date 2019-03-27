@@ -928,13 +928,13 @@ body.mobile-nav-active #mobile-nav-toggle {
 /*md*/
 @media (min-width: 992px) {
   #team .member .pic {
-    height: 210px;
+    height: 290px;
   }
 }
 /*lg*/
 @media (min-width: 1200px) {
   #team .member .pic {
-    height: 260px;
+    height: 350px;
   }
 }
 
