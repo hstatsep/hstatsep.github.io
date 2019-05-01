@@ -11,24 +11,60 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 
     <style>
+        html,
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
         #top {
             margin-bottom: 16px;
+            display: table;
+            width: 100%;
+            height: 100%;
         }
 
-        #top>div>div {
+        .navItem {
             text-align: center;
-            margin: 10px 0;
+            margin: 5px 0;
+            padding: 5px 0;
+            width: 50%;
+            /*margin: auto;*/
         }
 
-        #top>div>div>div {
+        .navItem>div {
+            width: 95%;
+            margin: auto;
+            text-align: center;
             border: 1px solid gray;
             border-radius: 10px;
-            padding: 10px 0;
-            width: 99%;
-            margin: auto;
+        }
+        
+        .navItem a:hover {
+            color:black;
         }
 
+        @media (min-width: 576px) {
+            .navItem {
+                /*width: 80%;*/
+            }
+            
+            .navItem a {
+                font-size:24px;
+            }
+        }
 
+        @media (min-height: 500px) {
+            h1 {
+                font-size: 8vh;
+            }
+        }
+
+        .nav {
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+        }
 
         .sections>div {
             border: 0px solid black;
@@ -40,6 +76,27 @@
             background-color: #f7f7f9;
 
         }
+
+        a {
+            color: black;
+        }
+        
+        #toTop {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 30px;
+            z-index: 99;
+            font-size: 18px;
+            border: none;
+            outline: none;
+            background-color: #2e72a1;
+            color: white;
+            cursor: pointer;
+            padding: 15px;
+            border-radius: 4px;
+        }
+        
     </style>
 
 
@@ -47,70 +104,92 @@
 
 <body>
 
+    <button onclick="topFunction()" id="toTop" title="Go to top">Top</button>
+
     <div class="container" id="top">
-        <h1>Students</h1>
-        <div class="row">
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>SEP vs CS</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Skills</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Expectations</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Expos & Showcase</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Slack</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>MVP</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Portfolio on Google Sites</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Stand-ups</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Presentation Tips</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Design</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Images</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Field Trips</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Github Troubleshooting</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Rubber Duck Debugging</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Interesting Links</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>FAQ</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Workflow</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Other Resources</div>
-            </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-                <div>Contributing</div>
-            </div>
-            <!--<div class="col-sm-6 col-md-4 col-lg-3">-->
+        <div class="nav">
+            <h1>Students</h1>
+            <div class="row">
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#sepcs">SEP vs CS</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#skills">Skills</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#expectations">Expectations</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#exposshowcase">Expos & Showcase</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#slack">Slack</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#mvp">MVP</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#portfolio">Portfolio</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#standups">Stand-ups</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#presentation">Presentation Tips</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#design">Design</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#images">Images</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#fieldtrips">Field Trips</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#github">Github Troubleshooting</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#rdd">RDD</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#links">Interesting Links</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#faq">FAQ</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#workflow">Workflow</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#other">Other Resources</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#contributing">Contributing</a></div>
+                    </a>
+                </div>
+                <!--<div class="col-sm-6 col-md-4 navItem">-->
 
-            <!--</div>-->
-
+                <!--</div>-->
+            </div>
         </div>
     </div>
     <!--top-->
@@ -119,115 +198,115 @@
 
     <div class="sections">
 
-        <div class="container-fluid">
+        <div class="container-fluid" id="sepcs">
             <div class="container">
                 <h2>SEP vs CS</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="skills">
             <div class="container">
                 <h2>Skills</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="expectations">
             <div class="container">
                 <h2>Expectations</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="exposshowcase">
             <div class="container">
                 <h2>Expos & Showcase</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="slack">
             <div class="container">
                 <h2>Slack</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="mvp">
             <div class="container">
                 <h2>MVP</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="portfolio">
             <div class="container">
-                <h2>Portfolio on Google Sites</h2>
+                <h2>Portfolio</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="standups">
             <div class="container">
                 <h2>Stand-ups</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="presentation">
             <div class="container">
                 <h2>Presentation Tips</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="design">
             <div class="container">
                 <h2>Design</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="images">
             <div class="container">
                 <h2>Images</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="fieldtrips">
             <div class="container">
                 <h2>Field Trips</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="github">
             <div class="container">
                 <h2>Github Troubleshooting</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="rdd">
             <div class="container">
                 <h2>Rubber Duck Debugging</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="links">
             <div class="container">
                 <h2>Interesting Links</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="faq">
             <div class="container">
                 <h2>FAQ</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="workflow">
             <div class="container">
                 <h2>Workflow</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="other">
             <div class="container">
                 <h2>Other Resources</h2>
                 <p>Text</p>
             </div>
         </div>
-        <div class="container-fluid">
+        <div class="container-fluid" id="contributing">
             <div class="container">
                 <h2>Contributing</h2>
                 <p>Text</p>
@@ -236,12 +315,33 @@
     </div>
 
     <script>
+    
+        // every other section gray background
         let cf = document.querySelectorAll(".container-fluid")
         cf.forEach(function(e, i) {
             if (i % 2 == 0) {
                 e.classList.add("everyOther")
             }
         })
+
+
+        // scroll to top
+        window.onscroll = function() { scrollFunction() };
+
+        function scrollFunction() {
+            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                document.getElementById("toTop").style.display = "block";
+            }
+            else {
+                document.getElementById("toTop").style.display = "none";
+            }
+        }
+
+        // When the user clicks on the button, scroll to the top of the document
+        function topFunction() {
+            document.body.scrollTop = 0;
+            document.documentElement.scrollTop = 0;
+        }
     </script>
 </body>
 
