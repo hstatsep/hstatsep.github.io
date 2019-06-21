@@ -26,7 +26,7 @@ Author URL: https://bootstrapmade.com
     - https://www.fontkey.design/app
 - Images
   - Using pictures from the internet
-    - Unsplash
+    - Unsplash, pixabay
     - Google → images → tools → usage rights → labeled for noncommercial reuse
   - SEP logos
   - Making images brighter/darker, smaller
