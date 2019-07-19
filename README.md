@@ -10,6 +10,7 @@ Author URL: https://bootstrapmade.com
 - MVP
   - What MVP is
   - MVP deadline, final deadline
+  - Link: https://www.freecodecamp.org/news/how-to-define-an-mvp/
 - Portfolio on Google Sites?
   - Purpose, how-to
 - Stand-ups
