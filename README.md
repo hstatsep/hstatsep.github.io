@@ -6,7 +6,6 @@ Author: BootstrapMade.com
 Author URL: https://bootstrapmade.com
 
 # /students to-do
-- Skills: attention to detail (file/folder names, compiling, etc)
 - MVP
   - What MVP is
   - MVP deadline, final deadline
