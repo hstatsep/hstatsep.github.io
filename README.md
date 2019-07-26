@@ -43,6 +43,9 @@ Author URL: https://bootstrapmade.com
   - Merge conflict: please enter a commit message to explain why this merge is necessary, Control+x to exit, N for no (don’t need to save buffer)
 - Rubber Duck Debugging
 - Interesting links
+  - https://medium.freecodecamp.org/720-free-online-programming-computer-science-courses-you-can-start-in-january-96988eb0c52f?gi=bcf3fd4b46f2
+  - https://amp.businessinsider.com/best-computer-science-schools-in-the-world-2017-2017-5
+  - https://dev.to/emmawedekind/using-git-tags-to-version-coding-tutorials-39cc
 - FAQ
   - Can I come out of SEP?
   - IDE (local vs cloud-based), github desktop?
