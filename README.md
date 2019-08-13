@@ -46,6 +46,7 @@ Author URL: https://bootstrapmade.com
   - https://medium.freecodecamp.org/720-free-online-programming-computer-science-courses-you-can-start-in-january-96988eb0c52f?gi=bcf3fd4b46f2
   - https://amp.businessinsider.com/best-computer-science-schools-in-the-world-2017-2017-5
   - https://dev.to/emmawedekind/using-git-tags-to-version-coding-tutorials-39cc
+  - https://medium.com/@george.seif94/a-few-things-every-new-software-developer-needs-to-know-2cf872198927
 - FAQ
   - Can I come out of SEP?
   - IDE (local vs cloud-based), github desktop?
