@@ -12,6 +12,7 @@
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.rawgit.com/nnattawat/flip/master/dist/jquery.flip.min.js">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link href="../lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
@@ -57,7 +58,7 @@
             font-size: 300%;
         }
 
-        .navItem {
+        .navItem, .vocabCard {
             text-align: center;
             margin: 5px 0;
             padding: 5px 0;
@@ -65,8 +66,8 @@
             /*margin: auto;*/
         }
 
-        .navItem>div {
-            width: 95%;
+        .navItem>div, .vocabCard>div {
+            width: 95% !important;
             margin: auto;
             text-align: center;
             border: 1px solid gray;
@@ -127,6 +128,43 @@
             margin: 10px 0;
         }
 
+        .vocabCard {
+            /*padding: 4px;*/
+            /*border: 1px solid #c6c6c7; /* dark gray */*/
+            /*display: table;*/
+        }
+
+        .front, .back {
+            display: table;
+        }
+
+        .front > h3 {
+            color: #2e72a1; /* dark gray */
+            font-size: 2em;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+        }
+
+        .back {
+            background-color: #808080; /* dark gray */
+        }
+
+        .back > div {
+            color: white;
+            text-align: center;
+            vertical-align: middle;
+            display: table-cell;
+        }
+
+        .back h3 {
+            font-weight: 600;
+        }
+
+        .back p {
+            font-size: 1em;
+        }
+
         #toTop {
             display: none;
             position: fixed;
@@ -136,7 +174,7 @@
             font-size: 18px;
             border: none;
             outline: none;
-            background-color: #2e72a1;
+            background-color: #2e72a1; /* blue */
             color: white;
             cursor: pointer;
             padding: 15px;
@@ -269,6 +307,10 @@
                 </div>
                 <div class="col-sm-6 col-md-4 navItem">
                     <div><a href="#other">Other Resources</a></div>
+                    </a>
+                </div>
+                <div class="col-sm-6 col-md-4 navItem">
+                    <div><a href="#vocab">Vocabulary</a></div>
                     </a>
                 </div>
                 <div class="col-sm-6 col-md-4 navItem">
@@ -589,6 +631,742 @@
                     accumsan. Duis iaculis elit et nisi vestibulum, quis fermentum dolor tristique. Maecenas sit amet dapibus orci, sit amet pellentesque dolor.</p>
             </div>
         </div>
+        <div class="container-fluid" id="vocab">
+            <div class="container">
+                <h2>Vocabulary</h2>
+                <p>Here you will find many vocabulary terms related to computer science and software engineering.</p>
+                <p><strong>Click to flip a card</strong></p>
+                <div class="row">
+                    <!-- <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Front</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Heading</h3>
+                                <p>Description</p>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>CS</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Computer Science</h3>
+                                <p>Emphasis on theory. Often focuses on foundations of computing including algorithms, programming languages, theories of computing, artificial intelligence, and hardware design.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Software Engineering</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>Emphasis on application. Overlaps with computer science, but often focuses on solving real-world problems by creating software.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>IDE</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Integrated Development Environment</h3>
+                                <p>A place where a programmer typically does their coding. Usually includes a text editor, and often a file tree and debugger (like cloud9).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Front end</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>The visual side of a website or web application. Responsible for user interface. You can use the browser's inspector tools to look at the front end code (HTML, CSS, JS).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Back end</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>The "behind-the-scenes" side of an application. Responsible for data interaction. This code is hidden to the user.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Full stack</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>Both front end and back end.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>MVC</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Model-View-Controller</h3>
+                                <p>The three sections of most web applications.</p>
+                                <p>Model = back end</p>
+                                <p>View = front end</p>
+                                <p>Controller = middleman</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Github</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>A place where programmers share the code of their projects in an "open-source" fashion where others can distribute and contribute to each others' code. Versions of the code is managed by Git, a version-control system that keeps "snapshots" of files.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Server</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>A computer that is primarily a hard drive and network card. Used for public retrieval of information. Used for website and other data storage.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Host</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>The place where data/sites/software lives, often on 1 or multiple servers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>IP Address</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Internet Protocol Address</h3>
+                                <p>The virtual location of a computer or server. Usually a string of numbers.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>URL</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Uniform Resource Locator</h3>
+                                <p>The link/address to a website. Usually a string of text.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Stackoverflow</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>An online resource where anyone can ask and answer questions, often relating to computer programming. Questions and answers are up-ranked by users so that the best responses show near the top.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Startup</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>A relatively new business. Often has fewer members who have a wide range of skills, such as being full-stack developers. On the other hand, larger companies often have employees who focus on a smaller range of skills.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Field</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>An industry of related careers (ex: the software engineering field, the field of medicine, etc).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>CEO</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Chief Executive Officer</h3>
+                                <p>The highest-ranking person in a company or other institution, ultimately responsible for making managerial decisions.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>CLI / Terminal / Bash</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Command Line Interface</h3>
+                                <p>A text-based way to interact with a computer or server. Often used for manipulating and running files.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>GUI</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Graphical User Interface</h3>
+                                <p>Similar to a Command Line Interface, but uses intuitive gestures with icons instead of text-based commands. Also limited in capabilities compared to the CLI.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>OO/OOP</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Object Orientation</h3>
+                                <p>A.k.a. object-oriented programming. A data type where each object has both methods (functions/actions) and properties (descriptions).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>API</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Application Programming Interface</h3>
+                                <p>A set of routines, protocols, and tools for building software applications. Often used to give access from one software application to another (ex: Google Maps being used in other software).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>DRY</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Don't Repeat Yourself</h3>
+                                <p>Keeping your code "dry" means you're not copying/pasting, but rather making your code more efficient.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Iteration</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>A "step". Usually referred to going through a loop. Could be in the context of a computer program, or a step of a process (ex: "Apple is about to release the next iteration of the iPhone").</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>UI</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>User Interface</h3>
+                                <p>How the front end looks and how the user interacts with pages and visual elements like colors, buttons, and icons.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>UX</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>User Experience</h3>
+                                <p>How the user experiences a product or application based on the process they go through to discover it, the sequence of actions in interacting with it, and their thoughts, feelings, and impressions during/after the experience.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Bandwidth</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>Often used in reference to internet/server speed. Think of it as the number of lanes on a highway.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Analog/digital</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>Analog has a range of values (like a knob: 0-127). Digital has discrete values (like a lightswitch: on/off).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>WWW</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>World Wide Web</h3>
+                                <p>An information space where documents and other web resources are identified by URLs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>W3C</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>The World Wide Web Consortium</h3>
+                                <p>An international community that develops open standards to ensure the long-term growth of the Web.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>ISP</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Internet Service Provider</h3>
+                                <p>The company that provides internet to a building (ex: Spectrum, Verizon FiOS, Comcast).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>DNS</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Domain Name Service</h3>
+                                <p>Usually run by your ISP and matches URLs to IPs.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>HTTP</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Hypertext Transfer Protocol</h3>
+                                <p>A set of instructions for distributing data. HTTP is the foundation of data communication for the World Wide Web.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>HTTPS</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>Similar to HTTP; the "s" stands for "secure" which makes sure all communications between your browser and the website are encrypted. Sometimes webpages require external sources are loaded via HTTPS (if you get an error with "http", just add the "s" to the URL).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Compile</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>Convert the code into something that the machine can interpret.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>HTML</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>HyperText Markup Language</h3>
+                                <p>Language responsible for content of a website.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>CSS</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Cascading Style Sheets</h3>
+                                <p>Language responsible for style of a website.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>JS</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>JavaScript</h3>
+                                <p>Front end programming language responsible for interactivity and modifying content/style.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Java</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>A programming language that allows users to play online games, chat with people around the world, calculate a mortgage interest, view images in 3D, etc. Android is written in Java.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Python</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>A highly-readable backend programming language often used for data-heavy applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Ruby</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>A highly-readable backend programming language often used for building web applications.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>SQL</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Structured Query Language</h3>
+                                <p>Pronounced "sequel." Used for creating and manipulating databases. Comes in different variants (sqlite3, mysql, etc).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Query</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>Similar to "question." Often something you search for in a database (ex: all Amazon products with "headphones" in the title and has 5 stars).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>C, C++, C#</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>Complex programming languages used for creating heavy-duty software and operating systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>OS</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Operating System</h3>
+                                <p>The software that runs at the root of the computer and allows other software to run.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>PC</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Personal Computer</h3>
+                                <p>Often runs the Microsoft Windows OS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>MAC</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Macintosh</h3>
+                                <p>Made my Apple, often runs macOS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>CPU</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Central Processing Unit</h3>
+                                <p>The "brain" of a computer that makes computations and carries out algorithms (steps).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>RAM</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Random Access Memory</h3>
+                                <p>Like a "short-term" memory for quick retrieval.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>HD</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Hard Drive</h3>
+                                <p>Like a "long-term" memory for archiving data.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>SSD</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Solid State Drive</h3>
+                                <p>A type of hard drive with no moving parts. Works much faster than a standard hard drive.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Bit</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>Short for "binary digit." The smallest unit of information stored by a computer. Either a 0 or 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Byte</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>8 bits.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>KB</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Kilobyte</h3>
+                                <p>1024 bytes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>MB</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Megabyte</h3>
+                                <p>1024 kilobytes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>GB</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Gigabyte</h3>
+                                <p>1024 megabytes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>TB</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Terabyte</h3>
+                                <p>1024 gigabytes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>PB</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Petabyte</h3>
+                                <p>1024 terabytes.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>WYSIWYG</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>What you see is what you get</h3>
+                                <p>Pronounced "wiz-ee-wig." Often used to refer to editors where the display on the screen directly corresponds to the final result in the output (like Google Sites).</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>PDF</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Portable Document Format</h3>
+                                <p>A universal format of displaying documents regardless of the operating system or hardware.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>JPG</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Joint Photographic Experts Group (aka JPEG)</h3>
+                                <p>A file extension for a picture that has been compressed.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>PNG</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Portable Network Graphics</h3>
+                                <p>A file extension for a picture that has been uncompressed and can also support transparency.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Zip</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>A method of compressing data (including sub-folders and files) into a single file. Uncompressing is to "unzip."</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>IP</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Intellectual Property</h3>
+                                <p>The things you created with your brain, i.e. on a whiteboard or in code.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>VC</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Venture Capital(ist)</h3>
+                                <p>Investor funding for companies, especially startups. It's how they get money to hire employees, rent a building, etc. Investors (people with money) "loan" them money if they believe the company will make money, and they get a percentage back.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>R&D</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Research and Development</h3>
+                                <p>Business or government activity that is purposely designed to stimulate invention and innovation.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>HR</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Human Resources</h3>
+                                <p>The department within a company that deals with the hiring, administration, and training of employees.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>Marketing</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <p>Promoting and selling products or services. Includes research and advertising.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="vocabCard col-md-3 col-sm-6">
+                        <div class="front">
+                            <h3>CMS</h3>
+                        </div>
+                        <div class="back">
+                            <div>
+                                <h3>Content Management System</h3>
+                                <p>Software that facilitates creating, editing, organizing and publish content (i.e. Google Sites).</p>
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- /.row -->
+            </div> <!-- /.container -->
+        </div> <!-- /.container-fluid -->
         <div class="container-fluid" id="contributing">
             <div class="container">
                 <h2>Contributing</h2>
@@ -607,6 +1385,13 @@
                 e.classList.add("everyOther")
             }
         })
+
+        // vocab card flipping
+        $(".vocabCard").flip({
+            axis: "y",
+            reverse: true,
+            trigger: "click"
+        });
 
 
         // scroll to top
