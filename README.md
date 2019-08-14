@@ -6,10 +6,6 @@ Author: BootstrapMade.com
 Author URL: https://bootstrapmade.com
 
 # /students to-do
-- MVP
-  - What MVP is
-  - MVP deadline, final deadline
-  - Link: https://www.freecodecamp.org/news/how-to-define-an-mvp/
 - Portfolio on Google Sites?
   - Purpose, how-to
 - Stand-ups
@@ -34,7 +30,7 @@ Author URL: https://bootstrapmade.com
   - Video → gif
 - Field Trips
   - Where, how often, etc
-  - Vocab
+  - Vocab (link)
   - PENCIL/Deloitte explanation
 - Github troubleshooting 
   - pushing/pulling issues
