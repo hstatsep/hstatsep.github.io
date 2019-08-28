@@ -6,20 +6,6 @@ Author: BootstrapMade.com
 Author URL: https://bootstrapmade.com
 
 # /students to-do
-- Portfolio on Google Sites?
-  - Purpose, how-to
-- Stand-ups
-- Presentation tips
-- Design
-  - Flag/logo design principles
-  - Lots of links, articles, etc on design in general
-  - Color palettes
-    - Coolors.co
-    - color.adobe.com
-  - Font pairings
-    - Fontpair.co
-    - Look for other sites
-    - https://www.fontkey.design/app
 - Images
   - Using pictures from the internet
     - Unsplash, pixabay
