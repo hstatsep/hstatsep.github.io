@@ -6,14 +6,6 @@ Author: BootstrapMade.com
 Author URL: https://bootstrapmade.com
 
 # /students to-do
-- Images
-  - Using pictures from the internet
-    - Unsplash, pixabay
-    - Google → images → tools → usage rights → labeled for noncommercial reuse
-  - SEP logos
-  - Making images brighter/darker, smaller
-  - Taking screenshots (mac/windows)
-  - Video → gif
 - Field Trips
   - Where, how often, etc
   - Vocab (link)
