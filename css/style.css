@@ -48,6 +48,10 @@ h6 {
   padding: 0;
 }
 
+.red {
+  color: red;
+}
+
 /* Prelaoder */
 
 #preloader {
