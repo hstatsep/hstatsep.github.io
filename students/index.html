@@ -146,6 +146,11 @@
             margin: 10px 0;
         }
 
+        .bgGray {
+            background-color: lightgray;
+            padding: 10px;
+        }
+
         .vocabCard {
             /*padding: 4px;*/
             /*border: 1px solid #c6c6c7; /* dark gray */*/
@@ -552,7 +557,7 @@
                     <li>DON'T USE <code>@channel</code></li>
                     <ul>
                         <li>Answering a question; instead use <code>@username</code></li>
-                        <li>Random chit-chat</li>
+                        <li>Random chat</li>
                     </ul>
                 </ul>
                 <p>If you have a smartphone, you’re going to want to install the Slack app on your phone. This is the best way to ensure you see the notifications.  But often times your reply requires being at a computer (typing a long message, needing to pull up your own program, etc). Refer to the links above for using Slack on a computer.</p>
@@ -569,12 +574,26 @@
                 </ul>
                 <p><strong>Styling tips</strong></p>
                 <ul>
+                    <li>To make text appear bold: wrap it with asterisks: due *tomorrow* → due <strong>tomorrow</strong></li>
+                    <li>To make text appear italicized: wrap it with underscores: leaving _right now_ → leaving <em>right now</em></li>
                     <li>To make text appear as code: wrap it with backticks (the key above tab) `function` → <code>function</code></li>
                     <ul>
                         <li>^That^ only works for single lines of code; wrap multiple lines of code with <em>triple</em> backticks</li>
+                        <li>Example:</li>
+                        <pre style="font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">
+```div {
+    color: red;
+    }```
+                        </pre>
+                        <li>...becomes...</li>
+                        <pre class="bgGray">
+div {
+    color: red;
+}
+                        </pre>
                     </ul>
-                    <li>To make text appear italicized: wrap it with underscores: leaving _right now_ → leaving <em>right now</em></li>
-                    <li>To make text appear bold: wrap it with asterisks: due *tomorrow* → due <strong>tomorrow</strong></li>
+                    
+                    
                 </ul>
             </div>
         </div>
