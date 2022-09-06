@@ -904,6 +904,10 @@ body.mobile-nav-active #mobile-nav-toggle {
   top: -30px;
 }
 
+#portfolio a, #portfolio img {
+  height: 100%;
+}
+
 /* Team Section
 --------------------------------*/
 
