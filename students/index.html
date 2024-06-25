@@ -264,6 +264,10 @@
             color: #fff;
         }
 
+        div.modal-body > img {
+            margin-bottom: 16px;
+        }
+
 
     </style>
 
@@ -816,14 +820,202 @@ div {
             <div class="container">
                 <h2>Engineering Design Process</h2>
                 <ol>
-                    <li><strong>Define</strong> the problem</li>
-                    <li><strong>Research</strong> the problem</li>
-                    <li><strong>Brainstorm</strong> possible solutions</li>
-                    <li><strong>Plan</strong> the most promising solution</li>
-                    <li><strong>Create</strong> a prototype</li>
-                    <li><strong>Test</strong> and evaluate the prototype</li>
-                    <li><strong>Improve</strong> as needed</li>
-                    <li><strong>Communicate</strong> the results</li>
+                    
+                    <!-- 1. Define the problem -->
+                    <li><a href="#" data-toggle="modal" data-target="#edp1"><strong>Define</strong> the problem</a></li>
+                    <div class="modal fade" id="edp1" tabindex="-1" role="dialog" aria-labelledby="edp1Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="edp1Label">1. Define the problem</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>I started remodeling my living room...</p>
+                                    <img src="edp-table/edp1/edp1-1.jpg" class="img-fluid">
+                                    <p>And because I have a Murphy bed that folds down, I realized I needed a table that could be a <b>coffee table</b> but also raise to be a <b>dining table</b>.</p>
+                                    <img src="edp-table/edp1/edp1-2.jpg" class="img-fluid">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 2. Research the problem -->
+                    <li><a href="#" data-toggle="modal" data-target="#edp2"><strong>Research</strong> the problem</a></li>
+                    <div class="modal fade" id="edp2" tabindex="-1" role="dialog" aria-labelledby="edp2Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="edp2Label">2. Research the problem</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>At first, I learned about tables that could be manually cranked to change their height.</p>
+                                    <img src="edp-table/edp2/edp2-1.jpg" class="img-fluid">
+                                    <p>But since I'll be changing the height frequently, I'd rather just push a button. That's when I learned about <strong>linear actuators</strong>.</p>
+                                    <img src="edp-table/edp2/edp2-actuator.gif" class="img-fluid">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3. Brainstorm possible solutions -->
+                    <li><a href="#" data-toggle="modal" data-target="#edp3"><strong>Brainstorm</strong> possible solutions</a></li>
+                    <div class="modal fade" id="edp3" tabindex="-1" role="dialog" aria-labelledby="edp3Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="edp3Label">3. Brainstorm possible solutions</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>So I made many drawings.</p>
+                                    <img src="edp-table/edp3/bench.jpg" class="img-fluid">
+                                    <p>Many, many drawings.</p>
+                                    <img src="edp-table/edp3/bench.jpg" class="img-fluid">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 4. Plan the most promising solution -->
+                    <li><a href="#" data-toggle="modal" data-target="#edp4"><strong>Plan</strong> the most promising solution</a></li>
+                    <div class="modal fade" id="edp4" tabindex="-1" role="dialog" aria-labelledby="edp4Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="edp4Label">4. Plan the most promising solution</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Here's the final design.</p>
+                                    <img src="edp-table/edp4/bench.jpg" class="img-fluid">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 5. Create a prototype -->
+                    <li><a href="#" data-toggle="modal" data-target="#edp5"><strong>Create</strong> a prototype</a></li>
+                    <div class="modal fade" id="edp5" tabindex="-1" role="dialog" aria-labelledby="edp5Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="edp5Label">5. Create a prototype</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>A friend welded the base for me. I then wired the actuator. And just to see if it would work, I threw a piece of scrap wood on top.</p>
+                                    <img src="edp-table/edp5/edp5-1.png" class="img-fluid">                                    
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- 6. Test and evaluate the prototype -->
+                    <li><a href="#" data-toggle="modal" data-target="#edp6"><strong>Test</strong> and evaluate the prototype</a></li>
+                    <div class="modal fade" id="edp6" tabindex="-1" role="dialog" aria-labelledby="edp6Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="edp6Label">6. Test and evaluate the prototype</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>First I tested the table by itself.</p>
+                                    <img src="edp-table/edp6/edp6-testing1.gif" class="img-fluid">
+                                    <p>And because my slab of walnut wood weighs 100+ pounds, I made sure the linear actuator could handle the weight.</p>
+                                    <img src="edp-table/edp6/edp6-testing2.gif" class="img-fluid">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 7. Improve as needed -->
+                    <li><a href="#" data-toggle="modal" data-target="#edp7"><strong>Improve</strong> as needed</a></li>
+                    <div class="modal fade" id="edp7" tabindex="-1" role="dialog" aria-labelledby="edp7Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="edp7Label">7. Improve as needed</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>Lots of improvements were needed. I took the table to my friend's shop for help.</p>
+                                    <img src="edp-table/edp7/edp7-1.jpg" class="img-fluid">
+                                    <p>The slab of walnut wasn't perfectly flat. So we made it flat.</p>
+                                    <img src="edp-table/edp7/edp7-2.gif" class="img-fluid">
+                                    <p>The table was prone to oily fingerprints.</p>
+                                    <img src="edp-table/edp7/edp7-3.jpg" class="img-fluid">
+                                    <p>So I had to re-sand, re-oil, and then add several coats of polyurethane.</p>
+                                    <img src="edp-table/edp7/edp7-4.jpg" class="img-fluid">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 8. Communicate the results -->
+                    <li><a href="#" data-toggle="modal" data-target="#edp8"><strong>Communicate</strong> the results</a></li>
+                    <div class="modal fade" id="edp8" tabindex="-1" role="dialog" aria-labelledby="edp8Label" aria-hidden="true">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                <h5 class="modal-title" id="edp8Label">8. Communicate the results</h5>
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                                </div>
+                                <div class="modal-body">
+                                    <p>The table was done! All that was left to do was show it off.</p>
+                                    <img src="edp-table/edp8/edp8-1.gif" class="img-fluid">
+                                    <p>My main audience is my family. We've had several pizza nights here.</p>
+                                    <img src="edp-table/edp8/edp8-2.jpg" class="img-fluid">
+                                    <p>I've shown this table to many friends and family through conversations, puzzles, and more.</p>
+                                    <img src="edp-table/edp8/edp8-3.jpg" class="img-fluid">
+                                    <p>I'm excited to keep this table in my family, and hopefully one day, tell my grandkids the whole story.</p>
+                                    <img src="edp-table/edp8/edp8-4.jpg" class="img-fluid">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </ol>
             </div>
         </div>
